@@ -1,13 +1,19 @@
 //
 // Created by wangj on 2025/12/9.
 // 日志模块 数据库
-#include "dep.h";
+#include "dep.h"
+
+std::mutex mtx;
+using Mutex = std::mutex;
 
 class Singleton {
 public:
     static Singleton *getInstance() {
         if (instance == nullptr) {
-            instance = new Singleton();
+            lock_guard<Mutex> lg(mtx);
+            if (instance == nullptr) {
+                instance = new Singleton();
+            }
         }
         return instance;
     }
@@ -17,13 +23,14 @@ public:
     Singleton &operator=(const Singleton &) = delete;
 
 private:
-    static Singleton* instance;
+    static Singleton * volatile instance;
 
     Singleton() {
     }
 };
+
 // 饿汉式单例模式
-Singleton * Singleton::instance = nullptr;
+Singleton *Singleton::instance = nullptr;
 
 int main() {
     Singleton *p1 = Singleton::getInstance();
