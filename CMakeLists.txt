@@ -18,4 +18,8 @@ add_executable(cpp11 main.cpp
         dep.h
         单例模式.cpp
         测试拷贝.cpp
-        懒汉式单例模式.cpp)
+        懒汉式单例模式.cpp
+        懒汉单例模式第二种.cpp
+        test_singleton.cpp
+        简单工厂.cpp
+        工厂方法.cpp)

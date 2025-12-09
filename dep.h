@@ -10,5 +10,6 @@
 #include <functional>
 #include <list>
 #include <mutex>
+#include <memory>
 using namespace std;
 #endif //CPP11模板特例化_DEP_H
