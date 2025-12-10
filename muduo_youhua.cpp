@@ -54,6 +54,7 @@ public:
     template<class F>
     void enqueue(F &&task) {
         {
+            // cout << "TPY==" << typeid(F).name() << endl;
             unique_lock<mutex> lock(_queueMutex);
             // 将任务包装成 Task 类型并放入队列
             _tasks.emplace(forward<F>(task));
