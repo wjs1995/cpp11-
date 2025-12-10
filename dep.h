@@ -11,5 +11,8 @@
 #include <list>
 #include <mutex>
 #include <memory>
+#include <windows.h>
+
 using namespace std;
+
 #endif //CPP11模板特例化_DEP_H

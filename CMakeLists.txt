@@ -22,4 +22,8 @@ add_executable(cpp11 main.cpp
         懒汉单例模式第二种.cpp
         test_singleton.cpp
         简单工厂.cpp
-        工厂方法.cpp)
+        工厂方法.cpp
+        拷贝测试.cpp
+        抽象工厂.cpp
+        代理模式.cpp
+        装饰器模式.cpp)
