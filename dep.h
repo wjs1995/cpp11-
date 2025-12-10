@@ -12,6 +12,7 @@
 #include <mutex>
 #include <memory>
 #include <windows.h>
+#include <unordered_map>
 
 using namespace std;
 

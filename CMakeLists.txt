@@ -27,4 +27,5 @@ add_executable(cpp11 main.cpp
         抽象工厂.cpp
         代理模式.cpp
         装饰器模式.cpp
-        适配器模式.cpp)
+        适配器模式.cpp
+        观察者模式.cpp)
