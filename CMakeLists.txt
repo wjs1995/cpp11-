@@ -28,4 +28,12 @@ add_executable(cpp11 main.cpp
         代理模式.cpp
         装饰器模式.cpp
         适配器模式.cpp
-        观察者模式.cpp)
+        观察者模式.cpp
+        路径选择.cpp
+        路径选择c.c
+        路径选择cai.c
+        路径选择ai广度有限.c
+        BigInt.cpp
+        BigInt.cpp
+        bf.c
+        测试.c)

@@ -13,6 +13,8 @@
 #include <memory>
 #include <windows.h>
 #include <unordered_map>
+#include <stdlib.h>  // rand(), srand()
+#include <time.h>    // time()
 
 using namespace std;
 
