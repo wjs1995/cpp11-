@@ -36,4 +36,6 @@ add_executable(cpp11 main.cpp
         BigInt.cpp
         BigInt.cpp
         bf.c
-        测试.c)
+        测试.c
+        main.c
+        sum.c)
